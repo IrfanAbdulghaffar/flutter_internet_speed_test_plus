@@ -111,14 +111,14 @@ class _MyAppState extends State<MyApp> {
                       setState(() {
                         _downloadRate = download.transferRate;
                         _unitText =
-                            download.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
+                        download.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
                         _downloadProgress = '100';
                         _downloadCompletionTime = download.durationInMillis;
                       });
                       setState(() {
                         _uploadRate = upload.transferRate;
                         _unitText =
-                            upload.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
+                        upload.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
                         _uploadProgress = '100';
                         _uploadCompletionTime = upload.durationInMillis;
                         _testInProgress = false;
@@ -130,7 +130,7 @@ class _MyAppState extends State<MyApp> {
                       }
                       setState(() {
                         _unitText =
-                            data.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
+                        data.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
                         if (data.type == TestType.download) {
                           _downloadRate = data.transferRate;
                           _downloadProgress = percent.toStringAsFixed(2);
@@ -160,14 +160,14 @@ class _MyAppState extends State<MyApp> {
                       setState(() {
                         _downloadRate = data.transferRate;
                         _unitText =
-                            data.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
+                        data.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
                         _downloadCompletionTime = data.durationInMillis;
                       });
                     }, onUploadComplete: (TestResult data) {
                       setState(() {
                         _uploadRate = data.transferRate;
                         _unitText =
-                            data.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
+                        data.unit == SpeedUnit.kbps ? 'Kbps' : 'Mbps';
                         _uploadCompletionTime = data.durationInMillis;
                       });
                     }, onCancel: () {
